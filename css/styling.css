@@ -1,0 +1,189 @@
+body{
+    font: Arial, Helvetica, sans-sherif;
+}
+
+#container{
+    width: 1100px;
+    /* border: 1px solid grey; */ /*not required throughout*/
+    /* height: 100px; */
+    margin: 0 auto; /*0 for top and bottom and auto for l and r*/
+}
+
+#header{
+    height: 100px;
+    padding: 10px 0;
+}
+
+#brand{
+    float: left;
+}
+
+h1 a{
+    font-size: 50px;
+    font-weight: 100;
+    color: rgb(202, 61, 202);
+    text-decoration: none;
+}
+
+#searchBox{
+    float: right;
+    background: linear-gradient(rgb(204, 255, 179), rgb(136, 255, 77));
+    width: 400px;
+    height: 50px;
+    padding: 20px 20px 0px 20px;
+    margin-top: 15px;
+}
+
+.text{
+    float: left;
+    width: 200px;
+    padding: 5px;
+    font-size: 17px;
+    color: rgb(247, 178, 52);
+    background: white url(C:/Users/karan/Desktop/html_css/img/search.png) right center no-repeat;
+    border: 1px solid rgb(136, 255, 77);
+
+}
+
+.submitButton{
+    float: right;
+    padding: 5px;
+    font-weight: bold;
+    color: white;
+    background: rgb(213, 128, 255);
+    font-size: 17px;
+}
+
+.clear{
+    clear: both;
+}
+
+#menu{
+    height: 75px;
+    background: linear-gradient(rgb(255, 255, 153),rgb(255, 255, 51));
+    padding: 7px 0;
+}
+
+ul{    /*this will impack all lists. no bullet points*/
+    list-style: none;
+}
+
+#menu ul li{
+    float: left;
+    padding: 0 30px;
+    height: 30px;
+    border-right: 1px solid rgba(141, 46, 141, 0.897);
+}
+
+/* removing border from right of last item */
+#menu ul li:last-child{
+    border-right: none;
+}
+
+#menu ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: rgba(141, 46, 141, 0.897);
+    line-height: 30px;    /*text is centered relative to borderline*/
+    -webkit-transition: font-size 0.3s ease;
+    -moz-transition: font-size 0.3s ease;
+    -o-transition: font-size 0.3s ease;
+    -ms-transition: font-size 0.3s ease;
+    transition: font-size 0.3s ease;
+}
+
+#menu ul li a:hover, #menu ul li a.active{
+    font-size: 25px;
+    font-weight: bold;
+    color: rgba(141, 46, 141, 0.897);
+} 
+/* the property of above is automatically applied to HOME */
+
+#introduction{
+    background: linear-gradient(rgb(204, 255, 179), rgb(136, 255, 77));
+    padding: 30px;
+    margin: 17px 0;
+}
+
+#introduction h3{
+    font-size: 40px;
+    color: rgba(62, 121, 62, 0.884);
+    font-weight: normal;
+}
+
+#introduction p{
+    font-size: 25px;
+    color: rgba(72, 156, 72, 0.884);
+    text-align: justify;
+}
+
+/* classes are styled usin "." */
+
+.sideBar{
+    height: 500px;
+    width: 450px;
+    border: 1px solid rgb(168, 164, 164);
+    border-radius: 20px;
+    padding: 10px 30px;
+    margin: 2px;
+}
+
+.sideBar h3{
+    color: rgba(202, 61, 202, 0.884);
+    font-size: 30px;
+}
+
+
+.sideBar ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgba(185, 82, 185, 0.884);
+    -webkit-transition: font-size 0.3s ease;
+    -moz-transition: font-size 0.3s ease;
+    -o-transition: font-size 0.3s ease;
+    -ms-transition: font-size 0.3s ease;
+    transition: font-size 0.3s ease;
+}
+/* transition stays outside of over and active */
+
+.sidebar ul{
+    padding-top: 5px;
+}
+
+#leftSidebar ul li{
+    padding-bottom: 7px;
+    padding-left: 5px;
+    list-style-image: url(C:/Users/karan/Desktop/html_css/img//arrow.png);
+} /*cant do it in .sidebar ul li a{} because it affects each specific element in the list*/
+
+#rightSidebar ul li{
+    padding-bottom: 7px;
+    padding-left: 30px;
+    /* list-style-image: url(img/check.png); */
+    background: url(C:/Users/karan/Desktop/html_css/img/check.png) no-repeat left center;
+}
+
+
+.sideBar ul li a:hover, .sideBar ul li a.active{
+    text-decoration: none;
+    color: rgba(141, 46, 141, 0.897);
+    font-size: 25px;
+    font-weight: bold;   
+}
+/* the moment you hover, it becomes bold and color changes(no it transition) but it takes 0.3 seconds to get bigger(font size in transition)  */
+
+#leftSidebar{
+    float: left;
+}
+
+#rightSidebar{
+    float: right;
+}
+
+.footer{
+    height: 60px;
+    background: linear-gradient(rgb(255, 255, 153), rgb(255, 255, 51));
+    padding: 10px 30px;
+    margin-top: 15px;
+}
