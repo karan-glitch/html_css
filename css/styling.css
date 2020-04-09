@@ -40,7 +40,7 @@ h1 a{
     padding: 5px;
     font-size: 17px;
     color: rgb(247, 178, 52);
-    background: white url(img/search.png) right center no-repeat;
+    background: white url(../img/search.png) right center no-repeat;
     border: 1px solid rgb(136, 255, 77);
 
 }
@@ -154,14 +154,14 @@ ul{    /*this will impack all lists. no bullet points*/
 #leftSidebar ul li{
     padding-bottom: 7px;
     padding-left: 5px;
-    list-style-image: url(img//arrow.png);
+    list-style-image: url(../img//arrow.png);
 } /*cant do it in .sidebar ul li a{} because it affects each specific element in the list*/
 
 #rightSidebar ul li{
     padding-bottom: 7px;
     padding-left: 30px;
     /* list-style-image: url(img/check.png); */
-    background: url(img/check.png) no-repeat left center;
+    background: url(../img/check.png) no-repeat left center;
 }
 
 
